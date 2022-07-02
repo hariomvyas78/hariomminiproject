@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        body {
+             border: 20px;
+             padding-left: 50px;
+             padding-top: 20px;
+             background-color: rgba(221, 236, 235, 0.473);
+           }
+
+        h1{
+            text-align: left;
+          }
+
+        input {
+               border: 2px solid rgb(80, 74, 74);
+               border-radius: 5px;
+              }
+
+            #skill{
+                border: 2px solid rgb(80, 74, 74);
+               border-radius: 5px;
+ 
+            }  
+            button{
+                border: 2px solid rgb(80, 74, 74);
+               border-radius: 5px;
+
+            }
+    </style>
+    </head>
+
+    <body >
+        <form action="/backend.php" method="post">
+              <h1>Registration Form</h1>
+            <label for="fname">First Name</label>
+            <input type="fname" id="fname" name="fname" placeholder="Enter First Name" required/><br><br>
+
+            <label for="lname">Last Name</label>
+            <input type="lname" id="lname" name="lname" placeholder="Enter Last Name" required/><br><br>
+
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" placeholder="Enter Your Age" required/><br><br>
+    
+                <label for="dob">DOB</label>
+                <input type="date" id="dob" name="dob" placeholder="Enter Your DOB" required/><br><br>
+    
+                <label for="gender">Gender</label>
+                <input type="radio" id="gender" name="gender" required/>Male
+                <input type="radio" id="gender" name="gender"/>Female<br><br>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email Id" required/><br><br> 
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password" required/><br><br>
+     
+                <label for="password">Confirm Password</label>
+                <input type="password" id="password" name="password" placeholder="Confirm Password" required/><br><br>   
+
+            <label for="laptop">Skills</label>
+            <select id="skill" name="skills">
+                <option value="java">JAVA</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="c">C</option>
+                <option value="c++">C++</option>
+            </select><br><br>
+
+            <label for="portfolio">Portfolio</label>
+            <input type="url" id="portfolio" name="portfolio" placeholder="Enter Portfolio"/><br><br>
+
+            <button type="submit" value="Sumbit">Submit</button>
+        </form>
+    </body>
+</html>
